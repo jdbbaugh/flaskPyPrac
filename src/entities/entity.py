@@ -1,4 +1,5 @@
 # coding=utf-8
+
 from datetime import datetime
 from sqlalchemy import create_engine, Column, String, Integer, DateTime
 from sqlalchemy.ext.declarative import declarative_base
@@ -12,6 +13,7 @@ engine = create_engine(f'postgresql://{db_user}:{db_password}@{db_url}/{db_name}
 Session = sessionmaker(bind=engine)
 
 Base = declarative_base()
+
 
 class Entity():
     id = Column(Integer, primary_key=True)

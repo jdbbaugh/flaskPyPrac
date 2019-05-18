@@ -1,5 +1,7 @@
+
 # coding=utf-8
-from marshmellow import Schema, fields
+
+from marshmallow import Schema, fields
 from sqlalchemy import Column, String
 
 from .entity import Entity, Base
